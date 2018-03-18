@@ -56,7 +56,7 @@ class GDAX(object):
   def request_slice(self, start, end, granularity):
     # Allow 3 retries (we might get rate limited).
     retries = 3
-    for retry_count in xrange(0, retries):
+    for retry_count in range(0, retries):
       # From https://docs.gdax.com/#get-historic-rates the response is in the format:
       # [[time, low, high, open, close, volume], ...]
       response = requests.get(self.uri, {

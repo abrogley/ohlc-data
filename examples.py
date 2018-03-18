@@ -13,7 +13,7 @@ def ltc_eur_1day(start, end):
 
 if __name__ == "__main__":
   data_frame = ltc_eur_1day(datetime(2017, 7, 1), datetime(2017, 9, 10))
-  print data_frame
+  print(data_frame)
 
   # Save to CSV.
   data_frame.to_csv('data.csv')
